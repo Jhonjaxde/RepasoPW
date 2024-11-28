@@ -1,0 +1,63 @@
+
+h1{
+    background-color: rgb(204, 230, 221);
+    color: yellow;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.puntuacion{
+    
+    text-align: center;
+    font-weight: bold;
+    border: dashed ;
+    border-radius: 5px;
+    border-color: blueviolet;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.imagenPregunta{
+    padding-left: 50px;
+}
+
+.botones{
+    padding-left: 50px;
+
+    align-items: center;
+    gap: 5px;
+}
+button{
+    width: 200px; 
+    padding: 10px;
+}
+button:hover{
+    background-color: aquamarine;
+}
+
+.mensaje{
+    background-color: blue;
+    border: solid;
+    border-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+    color: aliceblue;
+}
+
+.mensajeMalo{
+    background-color: red;
+    border: solid;
+    border-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+}
+.imagenRespuesta{
+    padding-left: 50px;
+    
+}
+

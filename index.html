@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estiloJuego.css">
+    <script src="./js/comportamientoJuego.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <h1>Juego POK&#201;MON</h1>
+
+    </header>
+    <nav></nav>
+    <section>
+        <div class="container">
+            <div class="juego">
+                <div class="puntuacion">
+                    <ul>
+                        <p class="puntaje" id="idPuntaje">Puntaje: 5</p>
+                    </ul>
+                    <ul><p class="intentos" id="idIntentos">Intentos: 1/3</p></ul>
+                    <ul>Selecciona el nombre de Pok&#233;mon correcto</ul>
+
+                </div>
+                <div class="imagenPregunta">
+                    <img src="../img/image.png" id="idImagenP">
+                </div>
+                <div class="imagenRespuesta">
+                    <img src="../img/image2.png" id="idImagenR" style="display: none;">
+                </div>
+                <div class="botones">
+                    <ul>
+                        <button id="opcionUno"onclick="verificarRespuesta('idMensaje','opcionUno','idMensajeMalo','idIntentos','idImagenP','idImagenR','idPuntaje')">Keldeo-ordinary</button>
+                    </ul>
+                    <ul>
+                        <button id="opcionDos" onclick="verificarRespuesta('idMensaje','opcionDos','idMensajeMalo','idIntentos','idImagenP','idImagenR','idPuntaje')">drilbur</button>
+                    </ul>
+                    <ul>
+                        <button id="opcionTres" onclick="verificarRespuesta('idMensaje','opcionTres','idMensajeMalo','idIntentos','idImagenP','idImagenR','idPuntaje')">ninjask</button>
+                    </ul>
+                    <ul>
+                        <button id="opcionCuatro" onclick="verificarRespuesta('idMensaje','opcionCuatro','idMensajeMalo','idIntentos','idImagenP','idImagenR','idPuntaje')">excadrill</button>
+                    </ul>
+
+                    <div class="botonR">   
+                    <ul>
+                        <button id="idReiniciarJuego" onclick="reiniciarJuego('idIntentos','idMensaje','idMensajeMalo','idImagenP','idImagenR','idPuntaje')">Reiniciar</button>
+                    </ul>
+                    </div>
+                   <!--Mensaje si acierta-->
+                   <p class="mensaje" id="idMensaje">Felicitaciones, has selecionado la opcion correcta</p>
+                   <!--Mensaje si no acierta-->
+                   <p class="mensajeMalo" id="idMensajeMalo">Pok&#233;mon incorrecto, intentalo nuevamente</p>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
